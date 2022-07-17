@@ -8,7 +8,8 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
 private const val BASE_URL = "https://raw.githubusercontent.com/" +
-        "alwilukman/assesment03/static-api/"
+        "alwilukman/assesment-03/static-api/"
+
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
