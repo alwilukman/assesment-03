@@ -1,5 +1,6 @@
 package com.example.mykonter.ui.promo
 
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
@@ -37,15 +38,15 @@ class PromoAdapter : RecyclerView.Adapter<PromoAdapter.ViewHolder>() {
     class ViewHolder(
         private val binding: ListItemBinding
     ) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(paket: Promo) = with(binding) {
-            namaTextView.text = paket.nama
-            hargaTextView.text = paket.harga
+        fun bind(promo: Promo) = with(binding) {
+            namaTextView.text = promo.nama
+            hargaTextView.text = promo.harga
             Glide.with(imageView.context)
-                .load(PromoApi.getPromoUrl(paket.imageId))
+                .load(PromoApi.getPromoUrl(promo.imageId))
                 .error(R.drawable.ic_baseline_broken_image_24)
                 .into(imageView)
             root.setOnClickListener {
-                val pesan = root.context.getString(R.string.pesan, paket.nama)
+                val pesan = root.context.getString(R.string.pesan, promo.nama)
                 Toast.makeText(root.context, pesan, Toast.LENGTH_LONG).show()
             }
         }
