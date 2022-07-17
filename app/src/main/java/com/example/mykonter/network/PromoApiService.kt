@@ -29,7 +29,7 @@ object PromoApi {
     }
 
     fun getPromoUrl(nama: String): String {
-        return "$BASE_URL$nama.jpg"
+        return "$BASE_URL$nama.png"
     }
 }
 enum class ApiStatus2 { LOADING, SUCCESS, FAILED }
