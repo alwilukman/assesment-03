@@ -1,0 +1,7 @@
+[
+  {"nama": "Samsung", "harga": "3.000.000", "imageId": "samsung"},
+  {"nama": "Xiomi", "harga": "5.000.000", "imageId": "xiomi"},
+  {"nama": "IPhone", "harga": "1.000.000", "imageId": "iphone"},
+  {"nama": "Oppo", "harga": "4.000.000", "imageId": "oppo"},
+  {"nama": "Vivo", "harga": "7.000.000", "imageId": "vivo"}
+]
