@@ -22,11 +22,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:minWidth="30dp"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/imageView"
-        tools:text="Angsa" />
+        tools:text="Phone" />
     <TextView
         android:id="@+id/hargaTextView"
         android:layout_width="wrap_content"
@@ -34,7 +38,7 @@
         android:textStyle="italic"
         app:layout_constraintStart_toStartOf="@+id/namaTextView"
         app:layout_constraintTop_toBottomOf="@+id/guideline"
-        tools:text="Cygnus olor" />
+        tools:text="Harga" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

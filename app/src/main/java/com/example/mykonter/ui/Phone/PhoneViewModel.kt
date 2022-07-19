@@ -45,7 +45,7 @@ class PhoneViewModel : ViewModel() {
     fun getStatus(): LiveData<ApiStatus> = status
     fun scheduleUpdater(app: Application) {
         val request = OneTimeWorkRequestBuilder<UpdateWorker>()
-            .setInitialDelay(1, TimeUnit.MINUTES)
+            .setInitialDelay(30, TimeUnit.SECONDS)
             .build()
         WorkManager.getInstance(app).enqueueUniqueWork(
             MainActivity.CHANNEL_ID,

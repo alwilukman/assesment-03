@@ -7,6 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
+
 private const val BASE_URL = "https://raw.githubusercontent.com/" +
         "alwilukman/assesment-03/static-api/"
 
